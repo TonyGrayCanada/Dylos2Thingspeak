@@ -6,6 +6,11 @@ import serial
 import requests
 import sys
 
+# A cheap way to launch this is with an entry in the /etc/rc.local that looks like:
+# sudo sh -c 'cd /home/pi/Dylos2Thingspeak; python Dylos2Thingspeak.py YOUR_KEY_GOES_HERE '
+# If you have > 1 Dylos and want the second one to output small on field 4 and large on field 5:
+# sudo sh -c 'cd /home/pi/Dylos2Thingspeak; python Dylos2Thingspeak.py YOUR_KEY_GOES_HERE 4'
+
 if len(sys.argv) < 2:
 	print "Dylos2Thingspeak requires a single parameter, the API write key for your "
 	print "Thingspeak channel as described at"
