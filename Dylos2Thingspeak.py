@@ -10,8 +10,8 @@ if len(sys.argv) < 2:
 	print "Dylos2Thingspeak requires a single parameter, the API write key for your "
 	print "Thingspeak channel as described at"
 	print "https://www.mathworks.com/help/thingspeak/update-channel-feed.html"
-	print "and an optional parameter 'basefield=' which is the number of the "
-	print "field to write the small particle count to."
+	print "and may include an optional unlabeled numerical parameter after that which is"
+	print "the number of the field to write the small particle count to."
 	exit()
 
 logfilename = "Dylos2Thingspeak.log"
